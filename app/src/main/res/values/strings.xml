@@ -5,4 +5,11 @@
     <string name="botao_inicial">Conversar</string>
     <string name="inicio_sobre">Sobre</string>
     <string name="inicio_repositorio">Repositório</string>
+    <string name="voltar_inicio">Voltar</string>
+    <string name="chat_bot_name">Tux</string>
+    <string name="horario">00:00 dd/mm/yyyy</string>
+    <string name="conteudo">Exemplo de Mensagem Recebida</string>
+    <string name="entrada">Digite Sua Mensagem</string>
+    <string name="enviar_msg">Enviar</string>
+    <string name="msg_enviada">Exemplo de Mensagem Enviada</string>
 </resources>

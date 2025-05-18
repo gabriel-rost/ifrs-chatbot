@@ -7,4 +7,67 @@
     android:layout_height="match_parent"
     tools:context=".Conversa">
 
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_tux"
+            android:onClick="voltarAoInicio"
+            android:text="Voltar" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="71dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="@string/chat_bot_name"
+            android:textAlignment="textEnd"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/tuxgaucho" />
+    </LinearLayout>
+
+    <include layout="@layout/mensagem_recebida"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="322dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/entrada"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/verde_tux"
+            android:text="@string/enviar_msg" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
