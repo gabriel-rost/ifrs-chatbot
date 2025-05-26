@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void iniciarConversa(View v) {
-        Intent intent = new Intent(this, Conversa.class);
+        Intent intent = new Intent(this, Chat.class);
         startActivity(intent);
     }
 }
