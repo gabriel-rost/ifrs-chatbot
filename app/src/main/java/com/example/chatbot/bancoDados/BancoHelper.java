@@ -1,6 +1,7 @@
 package com.example.chatbot.bancoDados;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -16,13 +17,22 @@ public class BancoHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String sqlChat =
-                "CREATE TABLE interacao (" +
+                "CREATE TABLE IF NOT EXISTS interacao (" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "id_interacao INTEGER NOT NULL," +
                 "resposta VARCHAR NOT NULL" +
                         ")";
 
         db.execSQL(sqlChat);
+
+        cargaRegistros(db);
+    }
+
+    public void cargaRegistros(SQLiteDatabase db) {
+        String sqlCargaInicial = "INSERT INTO interacoes (id, id_interacao, resposta)" +
+                "VALUES (1, 1, 'Exemplo')";
+
+        db.execSQL(sqlCargaInicial);
     }
 
     @Override

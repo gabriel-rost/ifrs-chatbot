@@ -20,6 +20,7 @@
             android:id="@+id/textViewApresentacao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="test"
             android:text="@string/inicio_apresentacao" />
 
         <ImageView
