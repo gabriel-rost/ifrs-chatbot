@@ -7,7 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
-public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class  ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<ChatMessage> chatMessages;
     public ChatAdapter(List<ChatMessage> chatMessages) {
         this.chatMessages = chatMessages;

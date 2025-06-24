@@ -9,7 +9,7 @@ import retrofit2.http.POST;
 public class OpenAIAPIClient {
     private static final String BASE_URL = "https://api.openai.com/v1/";
     public interface OpenAIAPIService {
-        @Headers("Authorization: Bearer Token")
+        @Headers("Authorization: Bearer CHAVE-API")
         @POST("chat/completions")
         Call<OpenAIResponseModel> getCompletion(@Body OpenAIRequestModel requestModel);
     }

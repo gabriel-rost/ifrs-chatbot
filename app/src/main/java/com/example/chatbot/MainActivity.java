@@ -27,6 +27,5 @@ public class MainActivity extends AppCompatActivity {
     public void botaoInicarChat(View view) {
         Intent intent = new Intent(MainActivity.this, Chat.class);
         startActivity(intent);
-        finish();
     }
 }
