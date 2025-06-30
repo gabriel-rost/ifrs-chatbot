@@ -60,17 +60,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/layout_input"
+        android:background="#00FFFFFF"
         android:paddingHorizontal="8dp"
-        android:background="#EEEEEE"
         android:paddingVertical="6dp">
 
         <LinearLayout
             android:id="@+id/quick_buttons_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="center"
             android:gravity="center_vertical"
-            android:layout_gravity="center">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button_info_geral"
@@ -78,6 +78,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/primary"
                 android:text="Informações gerais"
+                android:textColor="#FFFFFF"
                 android:textSize="12sp" />
 
             <Button
@@ -86,6 +87,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/primary"
                 android:text="1º Semestre"
+                android:textColor="#FFFFFF"
                 android:textSize="12sp" />
 
             <Button
@@ -94,6 +96,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/primary"
                 android:text="Coordenação"
+                android:textColor="#FFFFFF"
                 android:textSize="12sp" />
         </LinearLayout>
     </HorizontalScrollView>

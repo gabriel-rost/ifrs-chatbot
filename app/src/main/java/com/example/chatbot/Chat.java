@@ -1,5 +1,7 @@
 package com.example.chatbot;
 
+import static com.example.chatbot.Contextos.INSTITUICAO;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -149,6 +151,14 @@ public class Chat extends AppCompatActivity {
             messageList.add(messageSistema);
             messageList.add(messageUsuario);
         }
+
+        if (entradaUsuario.matches(".*(instituição|instituicao|ifrs|campus rolante|informações do campus).*")) {
+            Message messageSistema = new Message("system", "Aqui estão as informações da instituição:");
+            Message messageUsuario = new Message("user", INSTITUICAO);
+            messageList.add(messageSistema);
+            messageList.add(messageUsuario);
+        }
+
 
         Message messageSistema = new Message("system", Contextos.MENSAGEM_CONTEXTO + Contextos.MENSAGEM_CONTEXTO_TADS);
         Message messageUsuario = new Message("user", userPrompt);
