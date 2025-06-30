@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">chatbot</string>
-    <string name="inicio_apresentacao">Olá, estou aqui para prestar informações sobre o IFRS - Campus Rolante</string>
+    <string name="app_name">TadsBot</string>
+    <string name="inicio_apresentacao">Olá, estou aqui para prestar informações sobre o curso Tecnólogo em Análise e Desenvolvimento de Sistemas do IFRS - Campus Rolante</string>
+    <string name="TadsBot">TadsBot</string>>
     <string name="inicio_ajuda">Como eu poderia lhe ajudar?</string>
-    <string name="botao_inicial">Conversar</string>
+    <string name="botao_inicial">Iniciar Chat</string>
     <string name="inicio_sobre">Sobre</string>
     <string name="inicio_repositorio">Repositório</string>
     <string name="voltar_inicio">Voltar</string>
